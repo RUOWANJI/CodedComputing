@@ -1,1 +1,9 @@
-<h1> Large scale coded computing </h1>
+<h1> Large-scale coded computing </h1>
+# Introduction
+Coded distributed matrix multiplication for straggler mitigation has received a lot of attention recently. In coded distributed matrix multiplication, a master node wishes to compute the matrix product AB with the help of several worker nodes.
+The main idea %in coded distributed matrix multiplication 
+is to partition A and B into several smaller submatrices, encode the submatrices using a carefully constructed code into a redundant set of submatrices, and transmit the encoded submatrices to different worker nodes. 
+The worker nodes compute the smaller matrix products and return their computation to the master node which combines the results from each worker node to produce the final result.
+The code is designed such that the final result can be recovered from a subset of the submatrix products, i.e., the system is resilient to straggling workers which do not return their computation in time.
+
+Robust algorithms for such kind of large-scale distributed matrix multiplication need to address several important factors including (i) resilience to straggling workers, typically measured using a recovery threshold, which is the minimum number of workers that need to return their computation; (ii) communication cost - the amount of information that needs to be communicated to the worker nodes; and (iii) scalability - the numerical accuracy and implementation complexity of the distributed algorithms.
