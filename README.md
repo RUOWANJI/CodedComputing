@@ -6,7 +6,9 @@ is to partition A and B into several smaller submatrices, encode the submatrices
 The worker nodes compute the smaller matrix products and return their computation to the master node which combines the results from each worker node to produce the final result.
 The code is designed such that the final result can be recovered from a subset of the submatrix products, i.e., the system is resilient to straggling workers which do not return their computation in time.
 
-Robust algorithms for such kind of large-scale distributed matrix multiplication need to address several important factors including (i) resilience to straggling workers, typically measured using a recovery threshold, which is the minimum number of workers that need to return their computation; (ii) communication cost - the amount of information that needs to be communicated to the worker nodes; and (iii) scalability - the numerical accuracy and implementation complexity of the distributed algorithms.
+Robust algorithms for such kind of large-scale distributed matrix multiplication need to address several important factors including 
+(i) resilience to straggling workers, typically measured using a recovery threshold, which is the minimum number of workers that need to return their computation; (ii) communication cost - the amount of information that needs to be communicated to the worker nodes; and 
+(iii) scalability - the numerical accuracy and implementation complexity of the distributed algorithms.
 
 
 ### Algorithm
