@@ -25,9 +25,22 @@ Robust algorithms for such kind of large-scale distributed matrix multiplication
 
 
 
-[Link](url) and ![Image](src)
+
 ```
 
+## Federated Learning
+
+With the increase in the size of datasets, the number of parameters that need to be optimized in machine-learning models has become large, substantially increasing the time required to train these models. To address this issue, several algorithms have been proposed to distribute the parameter optimization problem among multiple machines. These algorithms can be broadly classified into two groups: (i) centralized algorithms, (ii) non-centralized algorithms. In the case of centralized algorithms, the data and machine learning model (most case a neural network) are available at a central node that distributes the task of optimizing parameters of the model among several machines (referred to as workers). This requires a high-throughput network between the central server and the worker nodes. In case of decentralized algorithms, a shared global model is learnt from the data available at the participating users. This paradigm is referred to as federated learning.
+
+### Algorithm
+
+
+```markdown
+
+- Gradient Compression Based on Slepian-Wolf Federated Learning
+
+
+```
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
