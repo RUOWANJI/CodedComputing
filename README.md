@@ -7,28 +7,23 @@ The worker nodes compute the smaller matrix products and return their computatio
 The code is designed such that the final result can be recovered from a subset of the submatrix products, i.e., the system is resilient to straggling workers which do not return their computation in time.
 
 Robust algorithms for such kind of large-scale distributed matrix multiplication need to address several important factors including 
+
+
 (i) resilience to straggling workers, typically measured using a recovery threshold, which is the minimum number of workers that need to return their computation; (ii) communication cost - the amount of information that needs to be communicated to the worker nodes; and 
 (iii) scalability - the numerical accuracy and implementation complexity of the distributed algorithms.
 
 
 ### Algorithm
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+- Polynomial-Coded Computing
+- Random Khatri-Rao-Product Coded Computing(RKRP)
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
 ```
